@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<!--    <form action="/study/requestDemo07" method="post">-->
+<!--        <input name="username" placeholder="请输入用户名"><br>-->
+<!--&lt;!&ndash;        <input name="username" placeholder="请输入用户名"><br>&ndash;&gt;-->
+<!--        <input name="password" placeholder="请输入密码" type="password"><br>-->
+<!--        <input type="checkbox" name="hobby" value="game" placeholder="请选择兴趣爱好">游戏-->
+<!--        <input type="checkbox" name="hobby" value="music" placeholder="请选择兴趣爱好">音乐<br>-->
+<!--        <input value="注册" type="submit">-->
+<!--    </form>-->
+<script>
+    window.onload = function () {
+        var img = document.getElementById("checkCode");
+        img.onclick = function () {
+            var date = new Date()
+            img.src = "/study/checkCode?" + date.getTime()
+        }
+    }
+
+</script>
+<img id="checkCode" src="/study/checkCode">看不清？点击图片刷新
+</body>
+</html>
