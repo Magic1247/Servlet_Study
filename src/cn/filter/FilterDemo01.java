@@ -10,9 +10,9 @@ public class FilterDemo01 implements Filter {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-        System.out.println("FilterDemo01 coming...");
+//        System.out.println("FilterDemo01 coming...");
         chain.doFilter(req, resp);
-        System.out.println("FilterDemo01 end...");
+//        System.out.println("FilterDemo01 end...");
 
 
     }
